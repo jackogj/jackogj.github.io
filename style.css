@@ -1,0 +1,110 @@
+.form-inline, div.btn-group, .form-block {
+    margin: 10px 40px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+#int-columns,
+#int-lines {
+    width: 100px;
+}
+
+#int-width,
+#int-height {
+    width: 80px;
+}
+
+body > .progress {
+    visibility: hidden;
+}
+
+#list-colors {
+  min-width: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.color-item {
+  width: 80px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 5px;
+  vertical-align: top;
+  text-align: center;
+  padding: 10px 0;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.current-border {
+  border: 2px solid black;
+}
+
+.choose-shapes label {
+  margin-right: 10px;
+}
+
+.choose-shapes label input {
+  margin-right: 5px;
+}
+
+#color-picker {
+  width: 400px;
+}
+
+/* landscape */
+@media screen and (min-aspect-ratio: 13/9) {
+  .split {
+    overflow: hidden;
+  }
+
+  .left {
+    width: 50%;
+    float: left;
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .right {
+    width: 50%;
+    position: fixed;
+    overflow: scroll;
+    height: 100%;
+    right: 0;
+    padding: 20px;
+  }
+
+  .separator {
+    height: 100%;
+    right: 50%;
+    position: fixed;
+    width: 1px;
+    background-color: grey;
+  }
+}
+
+/* portrait */
+@media screen and (max-aspect-ratio: 13/9) {
+  .drawing-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+    background-color: #fafafa;
+    border-top: 2px solid black;
+    z-index: 5;
+  }
+
+  .left {
+    overflow: scroll;
+  }
+
+  body {
+    padding-bottom: 50vh;
+  }
+}
